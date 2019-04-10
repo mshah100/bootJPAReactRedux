@@ -1,0 +1,33 @@
+katharsis:
+  resourcePackage: boot.jpa
+  domainName: http://localhost:8082
+  pathPrefix: /
+  jpa:
+    enabled: false
+server:
+  context-path: /waghrayshah
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:mysql://localhost,port=3306/Accounts?serverTimezone=UTC
+    username: root
+    password: MyNewPass
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    hibernate:
+      naming: 
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+          ddl-auto: update
+          format_sql: true
+          show-sql: true
+          SQL: DEBUG
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+          current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+        id: 
+          new_generator_mappings: false
+        type: 
+          descriptor:
+            sql: 
+              BasicBinder: TRACE
