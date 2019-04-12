@@ -13,7 +13,7 @@ import io.katharsis.jpa.JpaRepositoryConfig;
 public class UserAcctDetailsRepository
 		extends JpaEntityRepository<UserAcctDetails, UserAcctDetailsId> {
 	
-	 @Autowired
+	 	@Autowired
 	    public UserAcctDetailsRepository(JpaModule module) {
 	        super(module, JpaRepositoryConfig.create(UserAcctDetails.class));
 	    } 

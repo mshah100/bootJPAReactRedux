@@ -1,4 +1,4 @@
-package boot.jpa.utils;
+/*package boot.jpa.utils;
 
 import boot.jpa.model.UserAcctDetails;
 import boot.jpa.model.UserAcctDetailsId;
@@ -43,4 +43,4 @@ public final class Utility {
 		return userAcctDetailsResource;
 		
 	}
-}
+}*/
